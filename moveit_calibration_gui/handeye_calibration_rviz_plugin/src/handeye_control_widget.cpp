@@ -548,9 +548,9 @@ void ControlTabWidget::takeSampleBtnClicked(bool clicked)
   if (frameNamesEmpty() || !takeTransformSamples())
     return;
 
-  if (effector_wrt_world_.size() == object_wrt_sensor_.size() && effector_wrt_world_.size() > 4)
-    if (!solveCameraRobotPose())
-      return;
+  // if (effector_wrt_world_.size() == object_wrt_sensor_.size() && effector_wrt_world_.size() > 4)
+  //   if (!solveCameraRobotPose())
+  //     return;
 
   // Save the joint values of current robot state
   if (planning_scene_monitor_)
